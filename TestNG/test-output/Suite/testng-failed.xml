@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="TestChrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="demo.LinkedValidation">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="verifySeachButton"/>
+        </methods>
+      </class> <!-- demo.LinkedValidation -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+  <test thread-count="5" name="Test Edge(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="demo.LinkedValidation">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="verifySeachButton"/>
+        </methods>
+      </class> <!-- demo.LinkedValidation -->
+    </classes>
+  </test> <!-- Test Edge(failed) -->
+</suite> <!-- Failed suite [Suite] -->
