@@ -3,17 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="demo.LinkedValidation">
+      <class name="demo.VerifyTitle">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="verifySingInButtonAnable"/>
-          <include name="verifySingInButtonVisibility"/>
           <include name="openBrowser"/>
-          <include name="verifySeachButton"/>
-          <include name="verifyTitle"/>
-          <include name="verifyText"/>
+          <include name="titleVerification"/>
         </methods>
-      </class> <!-- demo.LinkedValidation -->
+      </class> <!-- demo.VerifyTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
