@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -30,7 +31,10 @@ public void theTest() {
 	drpDownYear.selectByVisibleText("1920");
 }
 //adding a comment in line number 32 yooo
-
+@AfterTest
+public void closeBrowser() {
+	driver.close();
+}
    
    
 	}
